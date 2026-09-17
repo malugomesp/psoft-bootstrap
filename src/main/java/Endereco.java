@@ -1,4 +1,6 @@
 public class Endereco {
+    private static int proximoIdEndereco = 1;
+    private final int idEndereco;
     private String rua;
     private String bairro;
     private String cep;
@@ -7,12 +9,17 @@ public class Endereco {
     private String complemento;
     
     public Endereco(String rua, String bairro, String cep, String cidade, int numero, String complemento) {
+        this.idEndereco = proximoIdEndereco++;
         this.rua = rua;
         this.bairro = bairro;
         this.cep = cep;
         this.cidade = cidade;
         this.numero = numero;
         this.complemento = complemento;
+    }
+
+    public int getIdEndereco() {
+        return idEndereco;
     }
 
     public String getRua() {

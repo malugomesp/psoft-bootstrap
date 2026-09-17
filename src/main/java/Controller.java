@@ -24,4 +24,15 @@ public class Controller {
     public void removeEndereco(String cpf, String rua, String bairro, String cep, String cidade, int numero, String complemento){
         pessoas.get(cpf).removeEndereco(rua, bairro, cep, cidade, numero, complemento);
     }
+
+    public void removePessoa(String cpf){
+        if (pessoas.containsKey(cpf)){
+            pessoas.remove(cpf);
+        }
+    }
+
+    public String atualizaEndereco(String cpf, int idEndereco, String rua, String bairro, String cep, String cidade, int numero, String complemento){
+        return pessoas.get(cpf).atualizaEndereco(idEndereco, rua, bairro, cep, cidade, numero, complemento);
+    }
+
 }
