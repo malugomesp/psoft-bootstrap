@@ -1,6 +1,0 @@
-/**
- * Produto
- */
-public class Produto {
-
-}
