@@ -1,0 +1,6 @@
+/**
+ * Pessoa
+ */
+public class Pessoa {
+
+}

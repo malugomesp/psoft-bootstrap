@@ -1,0 +1,6 @@
+/**
+ * Sprint
+ */
+public class Sprint {
+
+}
