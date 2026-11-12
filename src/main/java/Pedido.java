@@ -1,5 +1,5 @@
 public class Pedido {
-    private String nomeCliente;
+    private Cliente cliente;
     private String origem;
     private String destino;
     private double peso;
@@ -7,9 +7,9 @@ public class Pedido {
     private ModalidadeEntrega modalidadeEntregaAtual;
     private boolean despachado;
 
-    public Pedido(String nomeCliente, String origem, String destino,
+    public Pedido(Cliente cliente, String origem, String destino,
                   double peso, double distancia) {
-        this.nomeCliente = nomeCliente;
+        this.cliente = cliente;
         this.origem = origem;
         this.destino = destino;
         this.peso = peso;
@@ -52,8 +52,8 @@ public class Pedido {
         return distanciaEstimada;
     }
 
-    public String getNomeCliente() {
-        return nomeCliente;
+    public Cliente getCliente() {
+        return cliente;
     }
 
     public double getPeso() {
@@ -70,10 +70,6 @@ public class Pedido {
 
     public boolean isDespachado() {
         return despachado;
-    }
-
-    public void setNomeCliente(String nomeCliente) {
-        this.nomeCliente = nomeCliente;
     }
 
     public void setOrigem(String origem) {
